@@ -9,4 +9,5 @@ Ideas should focus on web technologies, think css3 and html5.
 When you are finished with your "feature":
 
 * Add a brief description of your change to the ChangeLog.markdown file
-* Let Joe Buszkiewic know and another developer will be selected at random.
+* Tag your change in git. git tag -a 'TagName' then git push --tags
+* Let Joe Buszkiewic know and another developer will be selected at random
