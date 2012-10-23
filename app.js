@@ -18,22 +18,6 @@ img.onload = function () {
 img.src = 'MR.png';
 var parts =  new particles(under);
 
-getVector = function(coordStart,coordEnd) {
-    return ({x:(coordEnd.x - coordStart.x), y: (coordEnd.y - coordStart.y)});
-}
-getStrongestVectorValue = function(vec2) {
-    if (Math.abs(vec2.x) > Math.abs(vec2.y)) {
-        return vec2.x;
-    } 
-    return vec2.y;
-}
-    
-getDistanceFromElementCenter = function(coord, element) {
-    var x = coord.x - (element.offsetLeft + element.offsetWidth / 2);
-    var y = coord.y - (element.offsetTop + element.offsetHeight / 2);
-    return({x: x, y: y});
-}
-
 under.onmousemove = function(event) {
     //had a few cross browser issues, not sure this was necessary tho
     if (window.event) {
