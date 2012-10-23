@@ -7,7 +7,7 @@ var update = function (clock,parts) {
         update(clock);
     }, 1);
 };
-
+ 
 var img = new Image();
 img.onload = function () {
     canvas.width = img.width;
