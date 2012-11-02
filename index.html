@@ -7,13 +7,15 @@
         html, body { width: 100%; height: 100%; margin: 0; }
         canvas#mondorobot { position: absolute; width: 256px; height: 256px; top: 50%; margin-top: -128px; left: 50%; margin-left: -128px; z-index: 10;}
         canvas#underlay { position: absolute; width: 512px; height: 512px; top: 50%; margin-top: -256px; left: 50%; margin-left: -256px; z-index: 5; }
+        canvas#nebula { display: none; }
         canvas#nebula2 { position: fixed; width: 100%; height: 100%; z-index: 1; }
+        canvas#nebula3 { display: none; }
 </style>
 </head>
 <body>
-    <canvas style="display:none" id="nebula" width="285" height="285"></canvas>
-    <canvas style="display:none" id="nebula3" width="570" height="570"></canvas>
+    <canvas id="nebula" width="285" height="285"></canvas>
     <canvas id="nebula2" width="570" height="570"></canvas>
+    <canvas id="nebula3" width="570" height="570"></canvas>    
     <canvas id="underlay" width="512" height="512"></canvas>
     <canvas id="mondorobot"  width="256" height="256"></canvas>
     
