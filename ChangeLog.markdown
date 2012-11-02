@@ -7,3 +7,8 @@ This was done using the canvas api. getImageData will give you a reference objec
 Lines shooting out from logo when mouse gets near.
 
 This was done with basic canvas line draws and clears. I had intended to do a better particle emmitter, but ran out of time. The fundamentals are working.
+
+# Nebula Background #
+Logo is floating through space now, hell yeah.
+
+Found this online and tweaked it a bit and incorporated it in.
