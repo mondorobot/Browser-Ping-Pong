@@ -12,3 +12,6 @@ This was done with basic canvas line draws and clears. I had intended to do a be
 Logo is floating through space now, hell yeah.
 
 Found this online and tweaked it a bit and incorporated it in.
+
+# More Cowbell #
+Wanted to randomly rotate the logos but don't want to slow down the battle anymore than I already have. Rotating an image on the canvas isn't as easy as one would think :o)

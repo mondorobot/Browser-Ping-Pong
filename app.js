@@ -15,8 +15,11 @@ img.onload = function () {
 
     update(new ColorClock(canvas, img),parts);
 };
+
 img.src = 'MR.png';
 var parts =  new particles(under);
+
+
 
 under.onmousemove = function(event) {
     //had a few cross browser issues, not sure this was necessary tho
