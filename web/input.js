@@ -51,8 +51,8 @@ InputHandler.prototype = {
     this.mouseCoords = windowToCavasCoordinates(canvas, e.clientX, e.clientY);
     this.clickButton = this.getMouseButton(e);
     console.log("mouse click: (" + this.mouseCoords.x + ", " + this.mouseCoords.y + ")");
-    e.preventDefault();
-    e.stopPropagation();
+    //e.preventDefault();
+    //e.stopPropagation();
     return false;
   },
   
@@ -60,8 +60,8 @@ InputHandler.prototype = {
     this.mouseCoords = windowToCavasCoordinates(canvas, e.clientX, e.clientY);
     this.activeButton = this.getMouseButton(e);
     
-    e.preventDefault();
-    e.stopPropagation();
+    //e.preventDefault();
+    //e.stopPropagation();
     return false;
   },
   
