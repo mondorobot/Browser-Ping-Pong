@@ -27,5 +27,6 @@
  @@@@@@@@@@@@@   @@@@@@@   @@@@@@@@@@@:   #@@@@@@@      @@@@@@     
                    @@.                       +@+                   
                                                                 
-
+install XCode 4.3 or greater.
+intall the XCode command line tools.
 run the build.sh script on osx to build the depedency libraries, openssl and boost, got the iOS Game controller. 
