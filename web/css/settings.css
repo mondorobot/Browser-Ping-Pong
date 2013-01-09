@@ -1,0 +1,22 @@
+
+#breakout-settings #controller-url {
+    width:200px;
+}
+
+#breakout-settings h1 
+{
+    font-size: 18px;
+    color: #bbb;
+    margin: 0 0 10px 0;
+}
+
+#breakout-settings #btn-save-settings
+{
+    margin: 10px 0 0 0;
+    float: right;
+}
+
+.clear
+{
+    clear: both;
+}

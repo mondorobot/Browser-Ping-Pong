@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D97FF24168687EF00E35A5C /* bg-vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D97FF22168687EF00E35A5C /* bg-vert.png */; };
+		1D97FF25168687EF00E35A5C /* bg-vert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D97FF23168687EF00E35A5C /* bg-vert@2x.png */; };
+		1D97FF861687B4CC00E35A5C /* HostUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D97FF801687B4CC00E35A5C /* HostUtils.cpp */; };
+		1D97FF871687B4CC00E35A5C /* WebSocketHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D97FF831687B4CC00E35A5C /* WebSocketHandler.mm */; };
+		1D97FF881687B4CC00E35A5C /* WebSocketServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D97FF841687B4CC00E35A5C /* WebSocketServer.cpp */; };
+		1D9EB33616812FFE00284364 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9EB33516812FFE00284364 /* UIKit.framework */; };
+		1D9EB33816812FFE00284364 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9EB33716812FFE00284364 /* Foundation.framework */; };
+		1D9EB33A16812FFE00284364 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9EB33916812FFE00284364 /* CoreGraphics.framework */; };
+		1D9EB34016812FFE00284364 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EB33E16812FFE00284364 /* InfoPlist.strings */; };
+		1D9EB34216812FFE00284364 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EB34116812FFE00284364 /* main.mm */; };
+		1D9EB34616812FFE00284364 /* MrAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EB34516812FFE00284364 /* MrAppDelegate.mm */; };
+		1D9EB34816812FFE00284364 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EB34716812FFE00284364 /* Default.png */; };
+		1D9EB34A16812FFE00284364 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EB34916812FFE00284364 /* Default@2x.png */; };
+		1D9EB34C16812FFE00284364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EB34B16812FFE00284364 /* Default-568h@2x.png */; };
+		1D9EB34F16812FFE00284364 /* MrTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D9EB34E16812FFE00284364 /* MrTestViewController.mm */; };
+		1D9EB35216812FFE00284364 /* MrTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EB35016812FFE00284364 /* MrTestViewController.xib */; };
+		1DFA8141168B73AF00F422BC /* bg-dark-vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA813F168B73AF00F422BC /* bg-dark-vert.png */; };
+		1DFA8142168B73AF00F422BC /* bg-dark-vert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA8140168B73AF00F422BC /* bg-dark-vert@2x.png */; };
+		1DFA8145168B755E00F422BC /* invader.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA8143168B755E00F422BC /* invader.png */; };
+		1DFA8146168B755E00F422BC /* invader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA8144168B755E00F422BC /* invader@2x.png */; };
+		1DFA814E168BCA1600F422BC /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA814D168BCA1600F422BC /* boost.framework */; };
+		1DFA817D168BCA4500F422BC /* OscDump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8152168BCA4500F422BC /* OscDump.cpp */; };
+		1DFA817E168BCA4500F422BC /* SimpleReceive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8153168BCA4500F422BC /* SimpleReceive.cpp */; };
+		1DFA817F168BCA4500F422BC /* SimpleSend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8154168BCA4500F422BC /* SimpleSend.cpp */; };
+		1DFA8183168BCA4500F422BC /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA815C168BCA4500F422BC /* OscOutboundPacketStream.cpp */; };
+		1DFA8184168BCA4500F422BC /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA815F168BCA4500F422BC /* OscPrintReceivedElements.cpp */; };
+		1DFA8185168BCA4500F422BC /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8161168BCA4500F422BC /* OscReceivedElements.cpp */; };
+		1DFA8186168BCA4500F422BC /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8163168BCA4500F422BC /* OscTypes.cpp */; };
+		1DFA8187168BCA4500F422BC /* OscUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8165168BCA4500F422BC /* OscUtils.cpp */; };
+		1DFA8188168BCA4500F422BC /* OscTcpData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8168168BCA4500F422BC /* OscTcpData.cpp */; };
+		1DFA8189168BCA4500F422BC /* OscTcpReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA816A168BCA4500F422BC /* OscTcpReceiver.cpp */; };
+		1DFA818A168BCA4500F422BC /* OscTcpSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA816C168BCA4500F422BC /* OscTcpSender.cpp */; };
+		1DFA818B168BCA4500F422BC /* OscUdpReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA816E168BCA4500F422BC /* OscUdpReceiver.cpp */; };
+		1DFA818C168BCA4500F422BC /* OscUdpSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8170168BCA4500F422BC /* OscUdpSender.cpp */; };
+		1DFA818E168BCA4500F422BC /* OscReceiveTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8175168BCA4500F422BC /* OscReceiveTest.cpp */; };
+		1DFA818F168BCA4500F422BC /* OscSendTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8177168BCA4500F422BC /* OscSendTests.cpp */; };
+		1DFA8190168BCA4500F422BC /* OscUnitTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA8179168BCA4500F422BC /* OscUnitTests.cpp */; };
+		1DFA81BC168BCCE300F422BC /* libwebsocketpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA81A5168BCA4D00F422BC /* libwebsocketpp.a */; };
+		1DFC33E81683E1B0008A1388 /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC33E51683E1B0008A1388 /* Icon-512.png */; };
+		1DFC33E91683E1B0008A1388 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC33E61683E1B0008A1388 /* Icon.png */; };
+		1DFC33EA1683E1B0008A1388 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC33E71683E1B0008A1388 /* Icon@2x.png */; };
+		1DFC33F71683E792008A1388 /* MrOptionsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC33F51683E792008A1388 /* MrOptionsViewController.mm */; };
+		1DFC33F81683E792008A1388 /* MrOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC33F61683E792008A1388 /* MrOptionsViewController.xib */; };
+		1DFC33FC1683ECDE008A1388 /* MrRootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC33FA1683ECDE008A1388 /* MrRootViewController.mm */; };
+		1DFC33FD1683ECDE008A1388 /* MrRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC33FB1683ECDE008A1388 /* MrRootViewController.xib */; };
+		1DFC34011683ED5A008A1388 /* MrControllerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC33FF1683ED5A008A1388 /* MrControllerViewController.mm */; };
+		1DFC34021683ED5A008A1388 /* MrControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC34001683ED5A008A1388 /* MrControllerViewController.xib */; };
+		1DFC34051683EEEF008A1388 /* MrBaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC34041683EEEF008A1388 /* MrBaseViewController.mm */; };
+		1DFC34181683FF3F008A1388 /* MrTurnDeviceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC34161683FF3F008A1388 /* MrTurnDeviceViewController.mm */; };
+		1DFC34191683FF3F008A1388 /* MrTurnDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC34171683FF3F008A1388 /* MrTurnDeviceViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DFA81A4168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DF1C691434A7A30029A1B1;
+			remoteInfo = "WebSocket++ Static Library";
+		};
+		1DFA81A6168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DF1CD11435ED910029A1B1;
+			remoteInfo = echo_server;
+		};
+		1DFA81A8168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B682887D143745F2002BA48B;
+			remoteInfo = chat_client;
+		};
+		1DFA81AA168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6CF181C1437C397009295BE;
+			remoteInfo = echo_client;
+		};
+		1DFA81AC168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6FE8D4F14730AE900B32547;
+			remoteInfo = policy_test;
+		};
+		1DFA81AE168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B663884B1487D73200DDAE13;
+			remoteInfo = echo_server_tls;
+		};
+		1DFA81B0168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6732458148FAEEB00FC2B04;
+			remoteInfo = fuzzing_server;
+		};
+		1DFA81B2168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6732471148FB0FC00FC2B04;
+			remoteInfo = fuzzing_client;
+		};
+		1DFA81B4168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B67324891491A16500FC2B04;
+			remoteInfo = broadcast_server;
+		};
+		1DFA81B6168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B67324A21491A7F100FC2B04;
+			remoteInfo = stress_client;
+		};
+		1DFA81B8168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B61A51BF14DC271900456432;
+			remoteInfo = concurrent_server;
+		};
+		1DFA81BA168BCA4D00F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6E7E7731505532E00394909;
+			remoteInfo = wsperf;
+		};
+		1DFA81BD168BCCF800F422BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B6DF1C681434A7A30029A1B1;
+			remoteInfo = "WebSocket++ Static Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D97FF22168687EF00E35A5C /* bg-vert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-vert.png"; sourceTree = "<group>"; };
+		1D97FF23168687EF00E35A5C /* bg-vert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-vert@2x.png"; sourceTree = "<group>"; };
+		1D97FF801687B4CC00E35A5C /* HostUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HostUtils.cpp; sourceTree = "<group>"; };
+		1D97FF811687B4CC00E35A5C /* HostUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostUtils.h; sourceTree = "<group>"; };
+		1D97FF821687B4CC00E35A5C /* WebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketHandler.h; sourceTree = "<group>"; };
+		1D97FF831687B4CC00E35A5C /* WebSocketHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WebSocketHandler.mm; sourceTree = "<group>"; };
+		1D97FF841687B4CC00E35A5C /* WebSocketServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketServer.cpp; sourceTree = "<group>"; };
+		1D97FF851687B4CC00E35A5C /* WebSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketServer.h; sourceTree = "<group>"; };
+		1D9EB33116812FFE00284364 /* ControlBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9EB33516812FFE00284364 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1D9EB33716812FFE00284364 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D9EB33916812FFE00284364 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D9EB33D16812FFE00284364 /* MondoRobot_iOSWebSocketsController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MondoRobot_iOSWebSocketsController-Info.plist"; sourceTree = "<group>"; };
+		1D9EB33F16812FFE00284364 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D9EB34116812FFE00284364 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		1D9EB34316812FFE00284364 /* MondoRobot_iOSWebSocketsController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MondoRobot_iOSWebSocketsController-Prefix.pch"; sourceTree = "<group>"; };
+		1D9EB34416812FFE00284364 /* MrAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrAppDelegate.h; sourceTree = "<group>"; };
+		1D9EB34516812FFE00284364 /* MrAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MrAppDelegate.mm; sourceTree = "<group>"; };
+		1D9EB34716812FFE00284364 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1D9EB34916812FFE00284364 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1D9EB34B16812FFE00284364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1D9EB34D16812FFE00284364 /* MrTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrTestViewController.h; sourceTree = "<group>"; };
+		1D9EB34E16812FFE00284364 /* MrTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MrTestViewController.mm; sourceTree = "<group>"; };
+		1D9EB35116812FFE00284364 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MrTestViewController.xib; sourceTree = "<group>"; };
+		1DFA813F168B73AF00F422BC /* bg-dark-vert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-dark-vert.png"; sourceTree = "<group>"; };
+		1DFA8140168B73AF00F422BC /* bg-dark-vert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-dark-vert@2x.png"; sourceTree = "<group>"; };
+		1DFA8143168B755E00F422BC /* invader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader.png; sourceTree = "<group>"; };
+		1DFA8144168B755E00F422BC /* invader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invader@2x.png"; sourceTree = "<group>"; };
+		1DFA814D168BCA1600F422BC /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = "dependencies/boost-1.51.0/ios/framework/boost.framework"; sourceTree = "<group>"; };
+		1DFA8150168BCA4500F422BC /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		1DFA8152168BCA4500F422BC /* OscDump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscDump.cpp; sourceTree = "<group>"; };
+		1DFA8153168BCA4500F422BC /* SimpleReceive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleReceive.cpp; sourceTree = "<group>"; };
+		1DFA8154168BCA4500F422BC /* SimpleSend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleSend.cpp; sourceTree = "<group>"; };
+		1DFA8155168BCA4500F422BC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1DFA8156168BCA4500F422BC /* make.MinGW32.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = make.MinGW32.bat; sourceTree = "<group>"; };
+		1DFA8157168BCA4500F422BC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		1DFA8159168BCA4500F422BC /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		1DFA815A168BCA4500F422BC /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		1DFA815B168BCA4500F422BC /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		1DFA815C168BCA4500F422BC /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscOutboundPacketStream.cpp; sourceTree = "<group>"; };
+		1DFA815D168BCA4500F422BC /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		1DFA815E168BCA4500F422BC /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		1DFA815F168BCA4500F422BC /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscPrintReceivedElements.cpp; sourceTree = "<group>"; };
+		1DFA8160168BCA4500F422BC /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		1DFA8161168BCA4500F422BC /* OscReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceivedElements.cpp; sourceTree = "<group>"; };
+		1DFA8162168BCA4500F422BC /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		1DFA8163168BCA4500F422BC /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
+		1DFA8164168BCA4500F422BC /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		1DFA8165168BCA4500F422BC /* OscUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscUtils.cpp; sourceTree = "<group>"; };
+		1DFA8166168BCA4500F422BC /* OscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscUtils.h; sourceTree = "<group>"; };
+		1DFA8168168BCA4500F422BC /* OscTcpData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTcpData.cpp; sourceTree = "<group>"; };
+		1DFA8169168BCA4500F422BC /* OscTcpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTcpData.h; sourceTree = "<group>"; };
+		1DFA816A168BCA4500F422BC /* OscTcpReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTcpReceiver.cpp; sourceTree = "<group>"; };
+		1DFA816B168BCA4500F422BC /* OscTcpReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTcpReceiver.h; sourceTree = "<group>"; };
+		1DFA816C168BCA4500F422BC /* OscTcpSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTcpSender.cpp; sourceTree = "<group>"; };
+		1DFA816D168BCA4500F422BC /* OscTcpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTcpSender.h; sourceTree = "<group>"; };
+		1DFA816E168BCA4500F422BC /* OscUdpReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscUdpReceiver.cpp; sourceTree = "<group>"; };
+		1DFA816F168BCA4500F422BC /* OscUdpReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscUdpReceiver.h; sourceTree = "<group>"; };
+		1DFA8170168BCA4500F422BC /* OscUdpSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscUdpSender.cpp; sourceTree = "<group>"; };
+		1DFA8171168BCA4500F422BC /* OscUdpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscUdpSender.h; sourceTree = "<group>"; };
+		1DFA8172168BCA4500F422BC /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		1DFA8173168BCA4500F422BC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1DFA8175168BCA4500F422BC /* OscReceiveTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceiveTest.cpp; sourceTree = "<group>"; };
+		1DFA8176168BCA4500F422BC /* OscReceiveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceiveTest.h; sourceTree = "<group>"; };
+		1DFA8177168BCA4500F422BC /* OscSendTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscSendTests.cpp; sourceTree = "<group>"; };
+		1DFA8178168BCA4500F422BC /* OscSendTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscSendTests.h; sourceTree = "<group>"; };
+		1DFA8179168BCA4500F422BC /* OscUnitTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscUnitTests.cpp; sourceTree = "<group>"; };
+		1DFA817A168BCA4500F422BC /* OscUnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscUnitTests.h; sourceTree = "<group>"; };
+		1DFA817B168BCA4500F422BC /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = websocketpp.xcodeproj; path = dependencies/websocketpp/websocketpp.xcodeproj; sourceTree = "<group>"; };
+		1DFC33E51683E1B0008A1388 /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-512.png"; sourceTree = "<group>"; };
+		1DFC33E61683E1B0008A1388 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1DFC33E71683E1B0008A1388 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1DFC33F41683E792008A1388 /* MrOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrOptionsViewController.h; sourceTree = "<group>"; };
+		1DFC33F51683E792008A1388 /* MrOptionsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MrOptionsViewController.mm; sourceTree = "<group>"; };
+		1DFC33F61683E792008A1388 /* MrOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MrOptionsViewController.xib; sourceTree = "<group>"; };
+		1DFC33F91683ECDE008A1388 /* MrRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrRootViewController.h; sourceTree = "<group>"; };
+		1DFC33FA1683ECDE008A1388 /* MrRootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MrRootViewController.mm; sourceTree = "<group>"; };
+		1DFC33FB1683ECDE008A1388 /* MrRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MrRootViewController.xib; sourceTree = "<group>"; };
+		1DFC33FE1683ED5A008A1388 /* MrControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrControllerViewController.h; sourceTree = "<group>"; };
+		1DFC33FF1683ED5A008A1388 /* MrControllerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MrControllerViewController.mm; sourceTree = "<group>"; };
+		1DFC34001683ED5A008A1388 /* MrControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MrControllerViewController.xib; sourceTree = "<group>"; };
+		1DFC34031683EEEF008A1388 /* MrBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrBaseViewController.h; sourceTree = "<group>"; };
+		1DFC34041683EEEF008A1388 /* MrBaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MrBaseViewController.mm; sourceTree = "<group>"; };
+		1DFC34151683FF3F008A1388 /* MrTurnDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrTurnDeviceViewController.h; sourceTree = "<group>"; };
+		1DFC34161683FF3F008A1388 /* MrTurnDeviceViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MrTurnDeviceViewController.mm; sourceTree = "<group>"; };
+		1DFC34171683FF3F008A1388 /* MrTurnDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MrTurnDeviceViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D9EB32E16812FFE00284364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFA81BC168BCCE300F422BC /* libwebsocketpp.a in Frameworks */,
+				1D9EB33616812FFE00284364 /* UIKit.framework in Frameworks */,
+				1D9EB33816812FFE00284364 /* Foundation.framework in Frameworks */,
+				1D9EB33A16812FFE00284364 /* CoreGraphics.framework in Frameworks */,
+				1DFA814E168BCA1600F422BC /* boost.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D97FF20168687EF00E35A5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D97FF21168687EF00E35A5C /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D97FF21168687EF00E35A5C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8143168B755E00F422BC /* invader.png */,
+				1DFA8144168B755E00F422BC /* invader@2x.png */,
+				1DFA813F168B73AF00F422BC /* bg-dark-vert.png */,
+				1DFA8140168B73AF00F422BC /* bg-dark-vert@2x.png */,
+				1D97FF22168687EF00E35A5C /* bg-vert.png */,
+				1D97FF23168687EF00E35A5C /* bg-vert@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1D9EB32616812FFE00284364 = {
+			isa = PBXGroup;
+			children = (
+				1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */,
+				1DFA814F168BCA4500F422BC /* oscpackasio-0.1 */,
+				1D9EB33B16812FFE00284364 /* MondoRobot_iOSWebSocketsController */,
+				1D97FF20168687EF00E35A5C /* Resources */,
+				1D9EB33416812FFE00284364 /* Frameworks */,
+				1D9EB33216812FFE00284364 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D9EB33216812FFE00284364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D9EB33116812FFE00284364 /* ControlBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D9EB33416812FFE00284364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA814D168BCA1600F422BC /* boost.framework */,
+				1D9EB33516812FFE00284364 /* UIKit.framework */,
+				1D9EB33716812FFE00284364 /* Foundation.framework */,
+				1D9EB33916812FFE00284364 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D9EB33B16812FFE00284364 /* MondoRobot_iOSWebSocketsController */ = {
+			isa = PBXGroup;
+			children = (
+				1D97FF821687B4CC00E35A5C /* WebSocketHandler.h */,
+				1D97FF831687B4CC00E35A5C /* WebSocketHandler.mm */,
+				1D97FF841687B4CC00E35A5C /* WebSocketServer.cpp */,
+				1D97FF851687B4CC00E35A5C /* WebSocketServer.h */,
+				1D9EB34416812FFE00284364 /* MrAppDelegate.h */,
+				1D9EB34516812FFE00284364 /* MrAppDelegate.mm */,
+				1DFC33F91683ECDE008A1388 /* MrRootViewController.h */,
+				1DFC33FA1683ECDE008A1388 /* MrRootViewController.mm */,
+				1DFC33FB1683ECDE008A1388 /* MrRootViewController.xib */,
+				1D9EB34D16812FFE00284364 /* MrTestViewController.h */,
+				1D9EB34E16812FFE00284364 /* MrTestViewController.mm */,
+				1D9EB35016812FFE00284364 /* MrTestViewController.xib */,
+				1DFC34151683FF3F008A1388 /* MrTurnDeviceViewController.h */,
+				1DFC34161683FF3F008A1388 /* MrTurnDeviceViewController.mm */,
+				1DFC34171683FF3F008A1388 /* MrTurnDeviceViewController.xib */,
+				1DFC33F41683E792008A1388 /* MrOptionsViewController.h */,
+				1DFC33F51683E792008A1388 /* MrOptionsViewController.mm */,
+				1DFC33F61683E792008A1388 /* MrOptionsViewController.xib */,
+				1D97FF801687B4CC00E35A5C /* HostUtils.cpp */,
+				1D97FF811687B4CC00E35A5C /* HostUtils.h */,
+				1DFC33FE1683ED5A008A1388 /* MrControllerViewController.h */,
+				1DFC33FF1683ED5A008A1388 /* MrControllerViewController.mm */,
+				1DFC34001683ED5A008A1388 /* MrControllerViewController.xib */,
+				1DFC34031683EEEF008A1388 /* MrBaseViewController.h */,
+				1DFC34041683EEEF008A1388 /* MrBaseViewController.mm */,
+				1D9EB33C16812FFE00284364 /* Supporting Files */,
+			);
+			path = MondoRobot_iOSWebSocketsController;
+			sourceTree = "<group>";
+		};
+		1D9EB33C16812FFE00284364 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DFC33E51683E1B0008A1388 /* Icon-512.png */,
+				1DFC33E61683E1B0008A1388 /* Icon.png */,
+				1DFC33E71683E1B0008A1388 /* Icon@2x.png */,
+				1D9EB33D16812FFE00284364 /* MondoRobot_iOSWebSocketsController-Info.plist */,
+				1D9EB33E16812FFE00284364 /* InfoPlist.strings */,
+				1D9EB34116812FFE00284364 /* main.mm */,
+				1D9EB34316812FFE00284364 /* MondoRobot_iOSWebSocketsController-Prefix.pch */,
+				1D9EB34716812FFE00284364 /* Default.png */,
+				1D9EB34916812FFE00284364 /* Default@2x.png */,
+				1D9EB34B16812FFE00284364 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DFA814F168BCA4500F422BC /* oscpackasio-0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8150168BCA4500F422BC /* CHANGES */,
+				1DFA8151168BCA4500F422BC /* examples */,
+				1DFA8155168BCA4500F422BC /* LICENSE */,
+				1DFA8156168BCA4500F422BC /* make.MinGW32.bat */,
+				1DFA8157168BCA4500F422BC /* Makefile */,
+				1DFA8158168BCA4500F422BC /* osc */,
+				1DFA8173168BCA4500F422BC /* README */,
+				1DFA8174168BCA4500F422BC /* tests */,
+				1DFA817B168BCA4500F422BC /* TODO */,
+			);
+			name = "oscpackasio-0.1";
+			path = "dependencies/oscpackasio-0.1";
+			sourceTree = "<group>";
+		};
+		1DFA8151168BCA4500F422BC /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8152168BCA4500F422BC /* OscDump.cpp */,
+				1DFA8153168BCA4500F422BC /* SimpleReceive.cpp */,
+				1DFA8154168BCA4500F422BC /* SimpleSend.cpp */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		1DFA8158168BCA4500F422BC /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8159168BCA4500F422BC /* MessageMappingOscPacketListener.h */,
+				1DFA815A168BCA4500F422BC /* OscException.h */,
+				1DFA815B168BCA4500F422BC /* OscHostEndianness.h */,
+				1DFA815C168BCA4500F422BC /* OscOutboundPacketStream.cpp */,
+				1DFA815D168BCA4500F422BC /* OscOutboundPacketStream.h */,
+				1DFA815E168BCA4500F422BC /* OscPacketListener.h */,
+				1DFA815F168BCA4500F422BC /* OscPrintReceivedElements.cpp */,
+				1DFA8160168BCA4500F422BC /* OscPrintReceivedElements.h */,
+				1DFA8161168BCA4500F422BC /* OscReceivedElements.cpp */,
+				1DFA8162168BCA4500F422BC /* OscReceivedElements.h */,
+				1DFA8163168BCA4500F422BC /* OscTypes.cpp */,
+				1DFA8164168BCA4500F422BC /* OscTypes.h */,
+				1DFA8165168BCA4500F422BC /* OscUtils.cpp */,
+				1DFA8166168BCA4500F422BC /* OscUtils.h */,
+				1DFA8167168BCA4500F422BC /* transport */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
+		1DFA8167168BCA4500F422BC /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8168168BCA4500F422BC /* OscTcpData.cpp */,
+				1DFA8169168BCA4500F422BC /* OscTcpData.h */,
+				1DFA816A168BCA4500F422BC /* OscTcpReceiver.cpp */,
+				1DFA816B168BCA4500F422BC /* OscTcpReceiver.h */,
+				1DFA816C168BCA4500F422BC /* OscTcpSender.cpp */,
+				1DFA816D168BCA4500F422BC /* OscTcpSender.h */,
+				1DFA816E168BCA4500F422BC /* OscUdpReceiver.cpp */,
+				1DFA816F168BCA4500F422BC /* OscUdpReceiver.h */,
+				1DFA8170168BCA4500F422BC /* OscUdpSender.cpp */,
+				1DFA8171168BCA4500F422BC /* OscUdpSender.h */,
+				1DFA8172168BCA4500F422BC /* PacketListener.h */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		1DFA8174168BCA4500F422BC /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA8175168BCA4500F422BC /* OscReceiveTest.cpp */,
+				1DFA8176168BCA4500F422BC /* OscReceiveTest.h */,
+				1DFA8177168BCA4500F422BC /* OscSendTests.cpp */,
+				1DFA8178168BCA4500F422BC /* OscSendTests.h */,
+				1DFA8179168BCA4500F422BC /* OscUnitTests.cpp */,
+				1DFA817A168BCA4500F422BC /* OscUnitTests.h */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		1DFA8193168BCA4C00F422BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA81A5168BCA4D00F422BC /* libwebsocketpp.a */,
+				1DFA81A7168BCA4D00F422BC /* echo_server */,
+				1DFA81A9168BCA4D00F422BC /* chat_client */,
+				1DFA81AB168BCA4D00F422BC /* echo_client */,
+				1DFA81AD168BCA4D00F422BC /* Policy Test */,
+				1DFA81AF168BCA4D00F422BC /* echo_server_tls */,
+				1DFA81B1168BCA4D00F422BC /* fuzzing_server */,
+				1DFA81B3168BCA4D00F422BC /* fuzzing_client */,
+				1DFA81B5168BCA4D00F422BC /* broadcast_server */,
+				1DFA81B7168BCA4D00F422BC /* stress_client */,
+				1DFA81B9168BCA4D00F422BC /* concurrent_server */,
+				1DFA81BB168BCA4D00F422BC /* wsperf */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D9EB33016812FFE00284364 /* MondoRobot_iOSWebSocketsController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9EB35816812FFE00284364 /* Build configuration list for PBXNativeTarget "MondoRobot_iOSWebSocketsController" */;
+			buildPhases = (
+				1D9EB32D16812FFE00284364 /* Sources */,
+				1D9EB32E16812FFE00284364 /* Frameworks */,
+				1D9EB32F16812FFE00284364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DFA81BE168BCCF800F422BC /* PBXTargetDependency */,
+			);
+			name = MondoRobot_iOSWebSocketsController;
+			productName = MondoRobot_iOSWebSocketsController;
+			productReference = 1D9EB33116812FFE00284364 /* ControlBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D9EB32816812FFE00284364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mr;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Rick Boykin";
+			};
+			buildConfigurationList = 1D9EB32B16812FFE00284364 /* Build configuration list for PBXProject "MondoRobot_iOSWebSocketsController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1D9EB32616812FFE00284364;
+			productRefGroup = 1D9EB33216812FFE00284364 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1DFA8193168BCA4C00F422BC /* Products */;
+					ProjectRef = 1DFA8192168BCA4C00F422BC /* websocketpp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D9EB33016812FFE00284364 /* MondoRobot_iOSWebSocketsController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1DFA81A5168BCA4D00F422BC /* libwebsocketpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebsocketpp.a;
+			remoteRef = 1DFA81A4168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81A7168BCA4D00F422BC /* echo_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_server;
+			remoteRef = 1DFA81A6168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81A9168BCA4D00F422BC /* chat_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = chat_client;
+			remoteRef = 1DFA81A8168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81AB168BCA4D00F422BC /* echo_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_client;
+			remoteRef = 1DFA81AA168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81AD168BCA4D00F422BC /* Policy Test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "Policy Test";
+			remoteRef = 1DFA81AC168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81AF168BCA4D00F422BC /* echo_server_tls */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echo_server_tls;
+			remoteRef = 1DFA81AE168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81B1168BCA4D00F422BC /* fuzzing_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fuzzing_server;
+			remoteRef = 1DFA81B0168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81B3168BCA4D00F422BC /* fuzzing_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fuzzing_client;
+			remoteRef = 1DFA81B2168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81B5168BCA4D00F422BC /* broadcast_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = broadcast_server;
+			remoteRef = 1DFA81B4168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81B7168BCA4D00F422BC /* stress_client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stress_client;
+			remoteRef = 1DFA81B6168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81B9168BCA4D00F422BC /* concurrent_server */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = concurrent_server;
+			remoteRef = 1DFA81B8168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1DFA81BB168BCA4D00F422BC /* wsperf */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wsperf;
+			remoteRef = 1DFA81BA168BCA4D00F422BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D9EB32F16812FFE00284364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9EB34016812FFE00284364 /* InfoPlist.strings in Resources */,
+				1D9EB34816812FFE00284364 /* Default.png in Resources */,
+				1D9EB34A16812FFE00284364 /* Default@2x.png in Resources */,
+				1D9EB34C16812FFE00284364 /* Default-568h@2x.png in Resources */,
+				1D9EB35216812FFE00284364 /* MrTestViewController.xib in Resources */,
+				1DFC33E81683E1B0008A1388 /* Icon-512.png in Resources */,
+				1DFC33E91683E1B0008A1388 /* Icon.png in Resources */,
+				1DFC33EA1683E1B0008A1388 /* Icon@2x.png in Resources */,
+				1DFC33F81683E792008A1388 /* MrOptionsViewController.xib in Resources */,
+				1DFC33FD1683ECDE008A1388 /* MrRootViewController.xib in Resources */,
+				1DFC34021683ED5A008A1388 /* MrControllerViewController.xib in Resources */,
+				1DFC34191683FF3F008A1388 /* MrTurnDeviceViewController.xib in Resources */,
+				1D97FF24168687EF00E35A5C /* bg-vert.png in Resources */,
+				1D97FF25168687EF00E35A5C /* bg-vert@2x.png in Resources */,
+				1DFA8141168B73AF00F422BC /* bg-dark-vert.png in Resources */,
+				1DFA8142168B73AF00F422BC /* bg-dark-vert@2x.png in Resources */,
+				1DFA8145168B755E00F422BC /* invader.png in Resources */,
+				1DFA8146168B755E00F422BC /* invader@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D9EB32D16812FFE00284364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9EB34216812FFE00284364 /* main.mm in Sources */,
+				1D9EB34616812FFE00284364 /* MrAppDelegate.mm in Sources */,
+				1D9EB34F16812FFE00284364 /* MrTestViewController.mm in Sources */,
+				1DFC33F71683E792008A1388 /* MrOptionsViewController.mm in Sources */,
+				1DFC33FC1683ECDE008A1388 /* MrRootViewController.mm in Sources */,
+				1DFC34011683ED5A008A1388 /* MrControllerViewController.mm in Sources */,
+				1DFC34051683EEEF008A1388 /* MrBaseViewController.mm in Sources */,
+				1DFC34181683FF3F008A1388 /* MrTurnDeviceViewController.mm in Sources */,
+				1D97FF861687B4CC00E35A5C /* HostUtils.cpp in Sources */,
+				1D97FF871687B4CC00E35A5C /* WebSocketHandler.mm in Sources */,
+				1D97FF881687B4CC00E35A5C /* WebSocketServer.cpp in Sources */,
+				1DFA817D168BCA4500F422BC /* OscDump.cpp in Sources */,
+				1DFA817E168BCA4500F422BC /* SimpleReceive.cpp in Sources */,
+				1DFA817F168BCA4500F422BC /* SimpleSend.cpp in Sources */,
+				1DFA8183168BCA4500F422BC /* OscOutboundPacketStream.cpp in Sources */,
+				1DFA8184168BCA4500F422BC /* OscPrintReceivedElements.cpp in Sources */,
+				1DFA8185168BCA4500F422BC /* OscReceivedElements.cpp in Sources */,
+				1DFA8186168BCA4500F422BC /* OscTypes.cpp in Sources */,
+				1DFA8187168BCA4500F422BC /* OscUtils.cpp in Sources */,
+				1DFA8188168BCA4500F422BC /* OscTcpData.cpp in Sources */,
+				1DFA8189168BCA4500F422BC /* OscTcpReceiver.cpp in Sources */,
+				1DFA818A168BCA4500F422BC /* OscTcpSender.cpp in Sources */,
+				1DFA818B168BCA4500F422BC /* OscUdpReceiver.cpp in Sources */,
+				1DFA818C168BCA4500F422BC /* OscUdpSender.cpp in Sources */,
+				1DFA818E168BCA4500F422BC /* OscReceiveTest.cpp in Sources */,
+				1DFA818F168BCA4500F422BC /* OscSendTests.cpp in Sources */,
+				1DFA8190168BCA4500F422BC /* OscUnitTests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DFA81BE168BCCF800F422BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WebSocket++ Static Library";
+			targetProxy = 1DFA81BD168BCCF800F422BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D9EB33E16812FFE00284364 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D9EB33F16812FFE00284364 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D9EB35016812FFE00284364 /* MrTestViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D9EB35116812FFE00284364 /* en */,
+			);
+			name = MrTestViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D9EB35616812FFE00284364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rick Boykin (MM2AM4L64Q)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/boost-1.51.0/ios/framework\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/dependencies/openssl-1.0.1c/ios/prefix/universal/include",
+					"${SRCROOT}/dependencies/websocketpp/src",
+					"${SRCROOT}/dependencies/oscpackasio-0.1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/dependencies/openssl-1.0.1c/ios/prefix/universal/lib",
+					"${SRCROOT}/dependencies/websocketpp/src",
+					"${SRCROOT}/../XCode_Libraries/oscpackasio-0.1",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EB7BEAD4-F13C-4964-B43D-4E96BAD0A42C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D9EB35716812FFE00284364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/dependencies/boost-1.51.0/ios/framework\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/dependencies/openssl-1.0.1c/ios/prefix/universal/include",
+					"${SRCROOT}/dependencies/websocketpp/src",
+					"${SRCROOT}/dependencies/oscpackasio-0.1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/dependencies/openssl-1.0.1c/ios/prefix/universal/lib",
+					"${SRCROOT}/dependencies/websocketpp/src",
+					"${SRCROOT}/../XCode_Libraries/oscpackasio-0.1",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D9EB35916812FFE00284364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MondoRobot_iOSWebSocketsController/MondoRobot_iOSWebSocketsController-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "MondoRobot_iOSWebSocketsController/MondoRobot_iOSWebSocketsController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = ControlBot;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1D9EB35A16812FFE00284364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MondoRobot_iOSWebSocketsController/MondoRobot_iOSWebSocketsController-Prefix.pch";
+				INFOPLIST_FILE = "MondoRobot_iOSWebSocketsController/MondoRobot_iOSWebSocketsController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = ControlBot;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D9EB32B16812FFE00284364 /* Build configuration list for PBXProject "MondoRobot_iOSWebSocketsController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9EB35616812FFE00284364 /* Debug */,
+				1D9EB35716812FFE00284364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D9EB35816812FFE00284364 /* Build configuration list for PBXNativeTarget "MondoRobot_iOSWebSocketsController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9EB35916812FFE00284364 /* Debug */,
+				1D9EB35A16812FFE00284364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D9EB32816812FFE00284364 /* Project object */;
+}

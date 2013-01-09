@@ -1,0 +1,11 @@
+
+.DS_Store
+nbproject/
+DerivedData/
+ios_controller/dependencies/boost-1.51.0/ios/
+ios_controller/dependencies/boost-1.51.0/boost_1_51_0/
+ios_controller/dependencies/boost-1.51.0/boost_1_51_0.tar.bz2
+ios_controller/dependencies/openssl/ios/
+ios_controller/dependencies/openssl/ios/openssl-1.0.1c/
+ios_controller/dependencies/openssl/ios/openssl-1.0.1c.tar.gz
+xcuserdata/

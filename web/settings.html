@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body { background-color: #222; width: 400px; height: 400px; }
+        </style>
+    </head>
+    <body>
+        <div id="breakout-settings">
+            <H1>Settings</H1>
+            <form id="the-settings-form" onsubmit="return false">
+                <label for="controller-ip">Controller Address:</label>
+                <input type="text" name="controller-url" id="controller-url" value="ws://192.168.4.110:7001/"/>
+                <!-- input type="text" name="controller-url" id="controller-url" value="ws://10.0.1.178:7001/"/ -->
+                <br/>
+                <input type="button" id="btn-save-settings" name="btn-save-settings" value="Save"/>
+            </form>
+        </div>
+    </body>
+</html>

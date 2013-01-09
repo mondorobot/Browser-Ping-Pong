@@ -44,8 +44,8 @@ Vector2.prototype = {
 	  
 	  if (mag !== 0) {
 	    var invMag = 1/mag;
-	    this.x * invMag;
-	    this.y * invMag;
+	    this.x *= invMag;
+	    this.y *= invMag;
 	  }
 	}
 }

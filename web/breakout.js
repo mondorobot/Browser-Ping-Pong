@@ -2,8 +2,8 @@
 var Breakout = function(canvas) {
   if (canvas) {
     context = canvas.getContext('2d');
-    var scene = new Scene("breakout", context);
     inputHandler = new InputHandler(canvas);
+    var scene = new Scene("breakout", context, inputHandler);
     var assetFiles = ['nebula.jpg', 'assets/breakout.png', 'assets/explosion.png'];
     var loadedAssets = [];
     var numAssetsLoaded = 0; 
@@ -27,6 +27,11 @@ var Breakout = function(canvas) {
           }
         );
       }
+    }
+    
+    this.setInputControllerAddress = function(url)
+    {
+        inputHandler.oscOpenController(url);
     }
     
     function handleAssetLoad(e) {
@@ -59,6 +64,16 @@ var Breakout = function(canvas) {
       createBall();
       
       scene.start();
+    }
+    
+    this.stop = function()
+    {
+        scene.stop();
+    }
+    
+    this.start = function()
+    {
+        scene.start();
     }
     
     function createBackground() {

@@ -167,24 +167,20 @@ MousePlacementEffect.prototype = {
   }
 }
 
-var MouseActionEffect = function(inputHandler, buttonTrigger, callbackFn, bounds) {
+var MouseActionEffect = function(inputHandler, buttonTrigger, callbackFn) {
   this.inputHandler = inputHandler;
   this.buttonTrigger = buttonTrigger;
   this.callbackFn = callbackFn || undefined;
 }
 
 MouseActionEffect.prototype = {
-  update: function(context, sprite, time) {
-    if (this.callbackFn !== undefined && this.buttonTrigger == this.inputHandler.activeButton) {
-      if (this.bounds !== undefined) {
-        var x = this.inputHandler.mouseCoords.x;
-        var y = this.inputHandler.mouseCoords.y;
-        if (x + sprite.width <= this.bounds.width && x >= this.bounds.x &&
-            y + sprite.height <= this.bounds.height && y >= this.bounds.y) {
-          this.callbackFn(context, sprite, time, this.inputHandler.mouseCoords);
-        }
-      }
-      else if (this.inputHandler.inActiveArea) {
+  update: function(context, sprite, time) 
+  {
+    if (this.callbackFn !== undefined && this.buttonTrigger == this.inputHandler.clickButton) 
+    {
+      console.log("MouseActionEffect: inActiveArea: " + this.inputHandler.inActiveArea);
+      if (this.inputHandler.inActiveArea) 
+      {
         this.callbackFn(context, sprite, time, this.inputHandler.mouseCoords);
       }
     }

@@ -12,11 +12,14 @@ var InputHandler = function(canvas) {
 	this.canvas = canvas;
 	
   // attach listeners
+  
+  this.addEvent(window, 'click', this.handleMouseClick);
   this.addEvent(window, 'mousedown', this.handleMouseDown);
   this.addEvent(window, 'mouseup', this.handleMouseUp);
   this.addEvent(window, 'mousemove', this.handleMouseMove);
   this.addEvent(canvas, 'mouseover', this.handleMouseOver);
   this.addEvent(canvas, 'mouseout', this.handleMouseOut);
+
 }
 
 InputHandler.prototype = {
@@ -24,6 +27,7 @@ InputHandler.prototype = {
   mouseCoords: {x: 0, y: 0},
   inActiveArea: false,
   activeButton: undefined,
+  clickButton: undefined,
   
   addEvent: function(element, eventType, fn, self) {
     // bind the function to the callback
@@ -41,6 +45,15 @@ InputHandler.prototype = {
     else {
       element['on'+eventType] = callbackFn;
     }
+  },
+  
+  handleMouseClick: function(e) {
+    this.mouseCoords = windowToCavasCoordinates(canvas, e.clientX, e.clientY);
+    this.clickButton = this.getMouseButton(e);
+    console.log("mouse click: (" + this.mouseCoords.x + ", " + this.mouseCoords.y + ")");
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
   },
   
   handleMouseDown: function(e) {
@@ -83,5 +96,11 @@ InputHandler.prototype = {
     }
     
     return button;
+  },
+  // The state gets cleared after a rending pass completes. 
+  // This allows us to do single clicks at random times.
+  clearState: function()
+  {
+      this.clickButton = undefined;
   }
 };

@@ -1,3 +1,4 @@
+
 # Initial Feature #
 Mondo Robot logo rendered inside a canvas. Modifying the color of the image data based on alpha channels over a period of time. 
 
@@ -26,3 +27,6 @@ launch the ball. The distance between the ball's starting position and mouse are
 the game is started the paddle will follow the mouse movement.
 
 The collision detection isn't perfect and there are a few bugs like the ball going through the paddle every once in a while, keeps it interesting!
+
+# Mondo Breakout Game Controler #
+Added a iOS iPhone application that acts as a game controller for the Mondo Breakout game. Communication between the game and the contrler is done without the need of an external server and utilized a WebSocket server on the iOS device and the native WebSockets of the browser.
